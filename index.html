@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Platformer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="levelDisplay"></div>
+        <div class="title-bar">
+            <h1 id="gameTitle">Gemini Platformer</h1>
+            <button id="menuButton">Menü</button>
+        </div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="menuModal" style="display: none;">
+        <div class="menu-tabs">
+            <button class="tab-button active" data-tab="description">Játék leírása</button>
+            <button class="tab-button" data-tab="settings">Beállítások</button>
+        </div>
+        <div id="description" class="tab-content active">
+            <h2>Játék leírása</h2>
+            <p>A játék célja, hogy a karakterrel végigmenj a pályán és beleugorj a kék tóba. A platformokra ugrásért pontokat kapsz: a platform közepére érkezve 50, a szélére érkezve 25 pont jár minden első ugrásért.</p>
+        </div>
+        <div id="settings" class="tab-content">
+            <h2>Beállítások</h2>
+            <p>Itt később testreszabhatod a játékot.</p>
+        </div>
+        <button id="closeMenuButton">Bezárás</button>
+    </div>
+    <div id="controlsModal">
+        <h2>Válassz irányítást!</h2>
+        <p>Szeretnéd a WASD gombokat használni?</p>
+        <button id="wasdButton">Igen (WASD)</button>
+        <button id="arrowButton">Nem (Nyilak)</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
